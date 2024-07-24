@@ -25,8 +25,7 @@ source megatron_env/bin/activate
 pkgdir=$(pwd)/pkgs
 mkdir -p $pkgdir
 export PIP_CACHE_DIR=$pkgdir
-git clone --recursive
-https://github.com/ROCmSoftwarePlatform/apex.git
+git clone --recursive https://github.com/ROCmSoftwarePlatform/apex.git
 cd apex
 git checkout torch_2.1_higher
 git submodule init
